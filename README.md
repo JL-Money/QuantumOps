@@ -1,5 +1,18 @@
 # Final Project
 
+## Using this repo (README)
+
+When anything happens to Jupyter Notebook (Linking a Kernel, running notebook cells, etc.), lots of metadata you don't want to be committed is saved as a `.ipynb` is one large file. Please do the following to avoid clutter.
+
+1. Install `nbstripout`, a tool that strips output from Jupyter notebooks automatically before committing them.
+
+   ``` pip install nbstripout ```
+
+2. Enable it in your repo. This sets up a Git filter to clean notebook outputs *before committing*
+
+   ``` nbstripout --install ```
+
+
 ## Content we have to implement
 
 - classical int ALU operations
